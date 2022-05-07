@@ -1,0 +1,72 @@
+@import '../index.less';
+html, body {
+    background: none !important;
+}
+
+.NobleAdjustModal{
+    .pxToVW(375, width);
+    background: rgba(0,0,0,0.6);
+    position: relative;
+    min-height: 100vh;
+    .modal{
+        margin: auto;
+        .pxToVW(315, width);
+        .pxToVW(24, padding-top);
+        .pxToVW(17, padding-bottom);
+        background: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .pxToVW(8, border-radius);
+        .close_btn{
+            .pxToVW(18, width);
+            .pxToVW(18, height);
+            position: absolute;
+            .pxToVW(25, top);
+            .pxToVW(18, right);
+            background: url('./back_btn.png') no-repeat center / 100% 100%;
+        }
+        .header{
+            .pxToVW(30, height);
+            font-family: PingFangSC-Medium;
+            font-size: 22px;
+            color: #333333;
+            text-align: center;
+            font-weight: 550;
+            .pxToVW(14, margin-bottom);
+        }
+        .description{
+            .pxToVW(278, width);
+            font-family: PingFangSC-Regular;
+            font-size: 13px;
+            color: #666666;
+            letter-spacing: 0;
+            margin: auto;
+            text-align: justify;
+            .pxToVW(19, line-height);
+            font-weight: 400;
+        }
+        .table{
+            margin: auto;
+            .pxToVW(11, margin-top);
+            .pxToVW(22, margin-bottom);
+            .pxToVW(295, width);
+            .pxToVW(291, height);
+            background: url('./table.png') no-repeat center / 100% 100%;
+        }
+        .iknown{
+            .pxToVW(229, width);
+            .pxToVW(44, height);
+            background-image: linear-gradient(269deg, #CCA671 0%, #E6C292 100%);
+            .pxToVW(60, border-radius);
+            .pxToVW(44, line-height);
+            margin: auto;
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+            font-weight: 400;
+        }
+    }
+}

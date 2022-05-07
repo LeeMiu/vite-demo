@@ -1,0 +1,4 @@
+.pxToVW (@px, @attr: width) {
+    @vw: (@px / 375) * 100;
+    @{attr}: ~"@{vw}vw";
+}
