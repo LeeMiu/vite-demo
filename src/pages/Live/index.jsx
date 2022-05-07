@@ -1,14 +1,13 @@
-import {lazy} from 'react'
-import {Switch, Route} from 'react-router-dom'
+import React, { lazy } from "react";
+import { Switch, Route } from "react-router-dom";
 
-const LiveSingleNoble = lazy(() => import('./LiveSinglePage'))
+const LiveSingleNoble = lazy(() => import("./LiveSinglePage"));
 
 function Live() {
-    return (
-        <Switch>
-            <Route exact path="/live/noble" component={LiveSingleNoble} />
-        </Switch>
-    )
-
+  return (
+    <Switch>
+      <Route exact path="/live/noble" component={LiveSingleNoble} />
+    </Switch>
+  );
 }
-export default Live
+export default Live;

@@ -1,14 +1,14 @@
-import {useEffect} from 'react'
+import { useEffect } from "react";
 
 export function useOnClickOutside(ref, callback) {
   useEffect(() => {
     function handler(event) {
       if (ref.current && !ref.current.contains(event.target)) {
-        callback()
+        callback();
       }
     }
-    window.addEventListener('mousedown', handler)
+    window.addEventListener("mousedown", handler);
 
-    return () => window.removeEventListener('mousedown', handler)
-  }, [callback, ref])
+    return () => window.removeEventListener("mousedown", handler);
+  }, [callback, ref]);
 }

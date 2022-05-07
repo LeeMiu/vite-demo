@@ -1,5 +1,6 @@
-import img from './empty.png'
-import './index.less'
+import React from "react";
+import img from "./empty.png";
+import "./index.less";
 
 function Empty() {
   return (
@@ -9,7 +10,7 @@ function Empty() {
         <p>啥都没找到</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Empty
+export default Empty;

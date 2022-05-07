@@ -1,13 +1,13 @@
-import {useRef} from 'react'
-import {useOnClickOutside} from '../../../tools'
-import './index.less'
+import React, { useRef } from "react";
+import { useOnClickOutside } from "../../../tools";
+import "./index.less";
 
 function NobleAdjustModal() {
-  const modalRef = useRef(null)
-  const closeWindow = () => window.alert('关闭页面')
+  const modalRef = useRef(null);
+  const closeWindow = () => window.alert("关闭页面");
   useOnClickOutside(modalRef, () => {
-    closeWindow()
-  })
+    closeWindow();
+  });
   return (
     <div className="NobleAdjustModal">
       <div className="modal" ref={modalRef}>
@@ -22,7 +22,7 @@ function NobleAdjustModal() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default NobleAdjustModal
+export default NobleAdjustModal;

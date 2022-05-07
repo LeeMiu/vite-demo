@@ -1,8 +1,8 @@
-import {Suspense} from 'react'
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import Live from './pages/Live'
-import Empty from './pages/Empty'
-import Loading from './components/Loading'
+import React, { Suspense } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Live from "./pages/Live";
+import Empty from "./pages/Empty";
+import Loading from "./components/Loading";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </Suspense>
-  )
+  );
 }
 
-export default App
+export default App;
