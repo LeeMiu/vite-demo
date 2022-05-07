@@ -1,0 +1,40 @@
+module.exports = {
+    env: {
+      browser: true,
+      node: true,
+      es6: true,
+    },
+    parser: 'babel-eslint',
+    parserOptions: {
+      ecmaVersion: 2021,
+      sourceType: 'module',
+    },
+    extends: ['airbnb', 'eslint:recommended', 'plugin:prettier/recommended'],
+    plugins: ['react-hooks'],
+    rules: {
+      camelcase: 'off',
+      'consistent-return': 'off',
+      'no-unused-expressions': 'off',
+      'import/prefer-default-export': 'off',
+      'react/button-has-type': 'off',
+      'react/state-in-constructor': 'off',
+      'react/no-array-index-key': 'warn',
+      'react/jsx-one-expression-per-line': 'off',
+      'react-hooks/exhaustive-deps': 'warn',
+      'react-hooks/rules-of-hooks': 'error',
+      'react/require-default-props': 'off',
+      'react/jsx-props-no-spreading': 'off',
+      'jsx-a11y/accessible-emoji': 'off',
+      'jsx-a11y/click-events-have-key-events': 'off',
+      'jsx-a11y/no-static-element-interactions': 'off',
+      'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    },
+    globals: {
+      ENV: true,
+      XC_SENTRY_RELEASE: true,
+      XC_SENTRY_CLIENT: true,
+      wx: true,
+      setShareInfo: true,
+    },
+  }
+  
